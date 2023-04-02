@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car Price Prediction Results</title>
+</head>
+<body>
+	<h2>Car Price Prediction Results</h2>
+
+	{% if prediction %}
+		<p>The predicted price of your car is <strong>{{ prediction }}</strong> INR.</p>
+	{% else %}
+		<p>Sorry, we could not make a prediction. Please check your input values and try again.</p>
+	{% endif %}
+
+	<p><a href="/">Predict Another Car Price</a></p>
+</body>
+</html>
